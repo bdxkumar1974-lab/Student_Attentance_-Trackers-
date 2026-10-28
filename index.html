@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Attendance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>Student Attendance Tracker</h1>
+</header>
+<section class="stats">
+  <article><span>Total Students</span><strong id="totalStudents">0</strong></article>
+  <article><span>Present Today</span><strong id="presentToday">0</strong></article>
+  <article><span>Absent Today</span><strong id="absentToday">0</strong></article>
+  <article><span>Overall Attendance</span><strong id="overallPercent">0%</strong></article>
+</section>
+<form id="studentForm">
+  <input id="studentName" placeholder="Student name" required>
+  <input id="studentId" placeholder="Student ID" required>
+  <input id="department" placeholder="Department" required>
+  <button type="submit">Add Student</button>
+</form>
+<table><thead><tr><th>Name</th><th>ID</th><th>Department</th><th>Today</th><th>Action</th></tr></thead><tbody id="studentRows"></tbody></table>
+<div id="attendanceList"></div>
+<script src="script.js"></script>
+</body>
+</html>
